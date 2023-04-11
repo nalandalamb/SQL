@@ -1,0 +1,26 @@
+
+CREATE TABLE toy (id INTEGER PRIMARY KEY, name TEXT, species TEXT, quantity TEXT, price INTEGER);
+INSERT INTO toy VALUES (1, "Ricky", "Clownfish", 30, 15);
+INSERT INTO toy VALUES (2, "Kelly", "Marshmallow", 3, 7);
+INSERT INTO toy VALUES (3, "Bloo", "Dinosaur", 7, 35);
+INSERT INTO toy VALUES (4, "Pikachu", "Pokemon", 200, 50);
+INSERT INTO toy VALUES (5, "Togepi", "Pokemon", 31, 40);
+INSERT INTO toy VALUES (6, "Snorlax", "Pokemon", 20, 40);
+INSERT INTO toy VALUES (7, "Senor", "Avocado", 35, 15);
+INSERT INTO toy VALUES (8, "Flora", "Boba", 20, 17);
+INSERT INTO toy VALUES (9, "Black", "Ramen", 15, 8);
+INSERT INTO toy VALUES (10, "Maggie", "Stingray", 2, 20);
+INSERT INTO toy VALUES (11, "Charlie", "Dragon", 7, 22);
+INSERT INTO toy VALUES (12, "April", "Cow", 8, 36);
+INSERT INTO toy VALUES (13, "Steven", "Pig", 22, 39);
+INSERT INTO toy VALUES (14, "Jimmy", "Turtle", 45, 20);
+INSERT INTO toy VALUES (15, "Nessie", "Dinosaur", 20, 30);
+
+-- display the database ordered by price
+SELECT* FROM toy ORDER BY price;
+
+-- determines the highest priced item
+SELECT MAX(price) FROM toy;
+
+-- determines the average price spent
+SELECT AVG(price) FROM toy;
